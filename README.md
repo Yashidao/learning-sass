@@ -2,6 +2,6 @@
 
 Dans ce repo, je reproduis des transitions avec scss.
 
-### Lien de mon HTML
+## Lien de mon HTML
 
-le lien ira ici :)
+<https://yashidao.github.io/learning-sass/index.html>

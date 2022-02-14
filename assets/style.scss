@@ -42,3 +42,29 @@ $background-color-state-two: white;
 }
 
 /* Mise en forme de la reproduction*/
+.photo{
+    border: 3px solid red;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: lightgray;
+        width: 100%;
+        height: 25%;
+        transition: 1s;
+        &.overlay:hover{
+            height: 50%;
+        }
+    }
+}
