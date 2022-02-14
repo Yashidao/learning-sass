@@ -1,4 +1,4 @@
-/*Mise en forme*/
+/* Mise en forme DRILL */
 .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,4 +45,6 @@
   -webkit-transform: translate(50px, 0px);
           transform: translate(50px, 0px);
 }
+
+/* Mise en forme de la reproduction*/
 /*# sourceMappingURL=style.css.map */

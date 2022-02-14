@@ -1,6 +1,6 @@
-// C'est des commentaires exclusif au scss qui ne sera pas visible dans le css par contre, ce qui suit, le sera.
+// C'est des commentaires exclusif au scss qui ne sera pas visible dans le css par contre /**/ , le sera.
 
-// Mise en place d'une variable pour les boxs
+// Mise en place d'une variable pour les boxs (DRILL)
 $border-px: 5px;
 $border-type: solid;
 $border-color: white;
@@ -8,7 +8,7 @@ $font-color: white;
 $background-color-state-one: black;
 $background-color-state-two: white;
 
-/*Mise en forme*/
+/* Mise en forme DRILL */
 .box{
 	display: flex;
 	flex-direction: column;
@@ -40,3 +40,5 @@ $background-color-state-two: white;
         }
     }
 }
+
+/* Mise en forme de la reproduction*/
