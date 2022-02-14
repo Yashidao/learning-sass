@@ -1,0 +1,42 @@
+// C'est des commentaires exclusif au scss qui ne sera pas visible dans le css par contre, ce qui suit, le sera.
+
+// Mise en place d'une variable pour les boxs
+$border-px: 5px;
+$border-type: solid;
+$border-color: white;
+$font-color: white;
+$background-color-state-one: black;
+$background-color-state-two: white;
+
+/*Mise en forme*/
+.box{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    background-color: black;
+    gap: 10px;
+    height: 300px;
+    div{
+        border: $border-px $border-type $border-color;
+        background-color: $background-color-state-one;
+        color: $font-color;
+        padding: 12px;
+        &.cligne:hover{
+            background-color: $background-color-state-two;
+            color: $background-color-state-one;
+            color: $background-color-state-one;
+            transition: 1s;
+        }
+        &.zoom:hover{
+            @extend .cligne;
+            transform: scale(1.5,1.5);
+        }
+        &.bouge:hover{
+            @extend .cligne;
+            transform: translate(50px, 0px);
+        }
+    }
+}
