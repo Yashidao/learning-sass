@@ -97,6 +97,32 @@
   overflow: hidden;
 }
 
+.container .photo .topright {
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 16px;
+  border-radius: 100%;
+  padding: 12px;
+  background-color: #e26923;
+}
+
+.container .photo:hover img {
+  -webkit-transition: height 1s, -webkit-transform 1s;
+  transition: height 1s, -webkit-transform 1s;
+  transition: transform 1s, height 1s;
+  transition: transform 1s, height 1s, -webkit-transform 1s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.container .photo:hover .overlay {
+  height: 50%;
+}
+
 .container .photo .overlay {
   position: absolute;
   bottom: 0;
@@ -105,12 +131,27 @@
   background-color: #fffefe;
   width: 100%;
   height: 25%;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: height 1s;
+  transition: height 1s;
 }
 
-.container .photo .overlay.overlay:hover {
-  height: 50%;
+.container .photo .overlay p {
+  color: gray;
+}
+
+.container .photo .overlay h4 {
+  color: #e26923;
+}
+
+.container .photo .overlay .accro {
+  background-color: #e26923;
+  color: white;
+  width: 70px;
+  height: 20px;
+  -webkit-transform: translate(0px, -16px);
+          transform: translate(0px, -16px);
+  padding: 6px;
+  margin-bottom: -20px;
 }
 
 .container .foot {
@@ -129,5 +170,11 @@
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  gap: 50px;
+}
+
+.container .foot div {
+  color: gray;
+  opacity: 0.9;
 }
 /*# sourceMappingURL=style.css.map */
