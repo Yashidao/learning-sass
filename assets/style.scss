@@ -81,6 +81,7 @@ $background-color-state-two: white;
             img{
                 transition: transform 1s, height 1s;
                 transform: scale(1.1,1.1);
+                opacity: 0.8;
             }
             .overlay{
                 height: 50%;
