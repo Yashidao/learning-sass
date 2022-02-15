@@ -42,36 +42,49 @@ $background-color-state-two: white;
 }
 
 /* Mise en forme de la reproduction*/
-.photo{
-    border: 3px solid red;
+.container{
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 3px solid rgb(212, 212, 212);
+    box-shadow: 3px 3px gray;
     width: 400px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    .overlay{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: lightgray;
-        width: 100%;
-        height: 25%;
-        transition: 1s;
-        &.overlay:hover{
-            height: 50%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    .photo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        .overlay{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(255, 254, 254);
+            width: 100%;
+            height: 25%;
+            transition: 1s;
+            &.overlay:hover{
+                height: 50%;
+            }
         }
     }
     .foot{
         display: flex;
         flex-direction: row;
         justify-content: center;
-	    align-items: center;
-	    align-content: center;
+        align-items: center;
+        align-content: center;
     }
 }
+
