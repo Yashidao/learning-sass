@@ -67,4 +67,11 @@ $background-color-state-two: white;
             height: 50%;
         }
     }
+    .foot{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+	    align-items: center;
+	    align-content: center;
+    }
 }
